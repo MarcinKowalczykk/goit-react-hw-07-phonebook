@@ -3,13 +3,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { nanoid } from 'nanoid';
 import Notiflix from 'notiflix';
 
-import { addContact } from 'redux/contacts/contacts.reducer';
-import css from 'components/ContactForm/ContactForm.module.css';
-import { Loader } from 'components/Loader/Loader';
+import { addContact } from '../redux/contacts/contacts.reducer';
+import css from './ContactForm.module.css';
+import { Loader } from '../Loader/Loader';
 import {
   selectContacts,
   selectIsLoading,
-} from 'redux/contacts/contacts.selectors';
+} from '../redux/contacts/contacts.selectors';
 
 export const ContactForm = () => {
   const dispatch = useDispatch();
